@@ -53,16 +53,12 @@ body {
     padding-top: 90px;
 }
 
-.landing {
-    text-align: center;
-}
-
 .landing img{
-    width: 100%;
-    height: auto;
     display: block;
     margin: 0 auto;
-}
+    width: 100%;
+    height: auto;
+} 
 
 .landing{
     position: relative;
@@ -88,7 +84,7 @@ body {
     font-size: 2.5em;
 }
 
-.elements h3 {
+.element-main h3 {
     text-decoration: underline;
     text-decoration-color: #00B172;
     text-decoration-thickness: 2px;
@@ -101,7 +97,8 @@ body {
 }
 
 .elements{
-    margin-bottom: 30px;
+    display:flex;
+    justify-content: space-between;
 }
 
 .element {
@@ -131,58 +128,26 @@ body {
     padding: 10px;
     clear: both;
 }
-
-.content {
-    background-color: #00B172;
-    height: 650px;
-    color: #fff;
-    margin-left: 35px;
-    margin-right: 35px;
-    position: relative;
-
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #00B172;
 }
 
-#icon {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-}
-
-#app {
+.item2 img {
+    padding: 30px;
     width: 300px;
     height: auto;
-    position: absolute;
-    top: 10%;
-    right: 50px;
 }
 
-section, aside {
-    flex: 1;
-    margin-right: 50px;
-}
-section, aside {
-float: left;
-width: 42%;
-padding: 1%;
-margin: 1%;
-}
+.item3 img {
+    width: 100px;
+    height: auto;
+} 
 
-section {
-    padding: 30px;
-    text-align: justify;
-    line-height: 150%;
-}
-
-.content p{
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-.content h3 {
-    font-size: 1.4em;
+.item1 h3 {
+    font-size: 1.5em;
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 0.5em;
@@ -190,7 +155,13 @@ section {
     margin-bottom: 60px;
 }
 
-.content h4 {
-    font-size: 1.3em;
-    margin-bottom: 30px;
+.item1 {
+    color: #fff;
+    padding: 30px;
+}
+
+.item1 h4 {
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-size: 1.2em;
 }
